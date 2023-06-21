@@ -1,0 +1,15 @@
+
+        h1 {color: blueviolet;text-align: center;font-size: 50px; padding: 60px;
+             background-color: rgb(17, 25, 8);}
+        h2 {color: rgb(255, 255, 255);font-size: 30px;}
+        a{
+            text-decoration: none;
+            color: rgb(243, 244, 244);
+            font-size: 30px;
+            background-color: black;
+          
+        }
+        body
+        {
+            background-color: rgb(6, 6, 6);
+        }
