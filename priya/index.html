@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>priya's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+
+<body>
+    <div id="home">
+    <header>
+        <nav>
+            <div class="left">
+                priya's portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firsts">
+            <div class="leftsection">
+                <pre>Hii, I am <span class="purple"> Priya </span></pre>
+
+                <div>
+                    <pre>I am a B.tech IT student</pre>
+                </div>
+                <pre>From India </pre>
+
+               <pre><span id="element"></span></pre>
+            </div>
+            <div class="rightsection">
+                <img src="i1new.jpg" alt="">
+            </div>
+
+        </section>
+
+    </main>
+</div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper ', 'Video Editor', 'Web Designer'],
+            typeSpeed: 80,
+        });
+    </script>
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="i2new.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-p">I am Priya Patel and I am a 5-sem It student of Silver Oak University.i am
+                        skilled in c,c++,JAVA,Python and also have good knowleg of database.
+                        I like to do experiments.and learning a new thigs is fun for me.i am a good team player.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br> C,C++,JAVA,Python</li>
+                            <li><span>Frame Work</span><br>Bootstrap</li>
+                            <li><span>Developer Tool</span><br>Git,Visual Studio Code</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-pursuing</span><br>Silver Oak University(b.tech It) </li>
+                            <li><span> 2019-2021</span><br>Smt. R. C. Patel Secondary & Higher Secondary School(12th)
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+     <!------projects------>
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                   
+                    <h2>JDBC Connection</h2>
+                    <p>It's a project on java and database in wich their is a login form and that was connected with database using JDBC connectivity.</p>
+                </div>
+                <div>
+                    
+                    <h2>Hotel managment</h2>
+                    <p>it's a Web Desining project wich implimented using HTML and CSS. in that i make a layout of a web of hotel management.</p>
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-----contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    
+                    <p><i class="fa-solid fa-square-phone"></i>7388292902</p>
+                   <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/priya-patel-239aa1277/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/priyasp25"><i class="fa-brands fa-github"></i></a>
+                   </div>
+                   <a href="priya.new.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                        <textarea name="message"  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright@priya patel. made with<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    </body>
+
+</html>
